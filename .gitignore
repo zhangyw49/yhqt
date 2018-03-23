@@ -1,4 +1,5 @@
 # input files & output files
+data
 __pycache__
 *.csv
 *.pyc
