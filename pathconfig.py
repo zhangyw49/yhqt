@@ -9,4 +9,5 @@ stockListFile = '/home/tober/work/yinhua/stockList/stock.csv'
 alphaRawPath = '/home/tober/work/yinhua/raw_alpha/'
 
 # preprocess path
+industryFile = '/home/tober/yhqt/data/industry.csv'
 alphaFinalPath = '/home/tober/work/yinhua/final_alpha/'
