@@ -7,20 +7,12 @@ import pandas as pd
 from scipy import stats
 from functools import reduce
 import feather as ft
-
+from pathconfig import *
 ###############################################################################
 ###############################################################################
-
-minute_file_path = 'G:\\1m_data\\1\\'
-timeSerialFile=r'C:\Users\wuwangchuxin\Desktop\yinhua_min\data\trade.date'
-
-###############################################################################
-###############################################################################
-###############################################################################
-
 
 def alpha_all(stockList, dateList, savepath):
-    for i in range(150, 192):
+    for i in range(1，192):
         try:
             tmp = eval('alpha_{:03}(stockList, dateList)'.format(i))
             tmp.to_csv(savepath + 'alpha_{:03}.csv'.format(i))

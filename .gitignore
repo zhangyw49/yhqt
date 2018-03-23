@@ -1,3 +1,5 @@
 # input files & output files
+__pycache__
 *.csv
+*.pyc
 .*.*
