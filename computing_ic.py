@@ -1,16 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Mar 17 23:45:18 2018
 
-@author: wuwangchuxin
-"""
-
-import pandas as pd
-import pickle
 import os
+import pickle
+import pandas as pd
 
-# an = 'netual_alpha_001.pickle'
-# alpha_ne.head()
 
 alpha_neutral = os.listdir(r'G:\short_period_mf\netual_process')
 for an in alpha_neutral:
@@ -19,17 +12,5 @@ for an in alpha_neutral:
     alpha_ne=alpha_ne.pivot(index='variable', columns='code', values='value')
     res = alpha_ne.groupby(lambda alpha_ne: alpha_ne[:13]).mean()  
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
     
